@@ -32,7 +32,7 @@ jobs:
           npm install remark-cli remark-preset-lint-consistent
           npx remark . --use remark-preset-lint-consistent --frail
       
-      # upload artifacts to the artifact storage
+      # uploads artifacts to the artifact storage
       - uses: actions/upload-artifact@main
         with:
           name: remark-lint-report
